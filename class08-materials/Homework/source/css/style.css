@@ -1,0 +1,323 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-size: 16px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     background: #F5F9FC;
+     /* display: block; */
+     padding-top: 10px;
+     height: 80px;
+}
+
+nav > * {
+     float: left;
+     width: 33.33%;
+}
+
+nav h2 {
+     margin-left: 30px;
+     font-size: 1.5rem;
+     color: #354C5F;
+     width: 30%;
+}
+
+nav ul * {
+     float: left;
+     list-style: none;
+     text-decoration: none;
+     color: #354C5F;
+     font-weight: 700;
+     width: 25%;
+     text-align: center;
+}
+
+nav > ul a {
+     font-size: 18px;
+     width: 100%;
+}
+
+nav > button {
+     padding: 15px;
+     width: 110px;
+     border-radius: 0;
+     border: none;
+     background: #2C4458;
+     color: #FFF;
+     float:right;
+     margin-right: 30px;
+     cursor: pointer;
+}
+
+nav > button:hover {
+     background: #4e799c;
+}
+
+header > span {
+     display: none;
+}
+
+main {
+     background: #F5F9FC;
+     clear: both;
+     height: 80vh;
+     padding: 5% 0 5% 5%;
+}
+
+#features {
+     background: #F5F9FC;
+     clear: both;
+     height: 40vh;
+     padding: 5% 0 5% 5%;
+}
+
+
+#leftHero {
+     float: left;
+     width: 50%;
+}
+
+#heroImg {
+     /* float: right; */
+     width: 50%;
+     text-align: right;
+     overflow: hidden;
+}
+
+h1 {
+     color: #2E465A;
+     font-size: 3rem;
+     width: 55%;
+}
+
+h2 {
+     color: #2E465A;
+     font-size: 2.8rem;
+}
+
+h3 {
+     color: #2E465A;
+     font-size: 1.2rem;
+     font-weight: 700;
+}
+
+#leftHero p {
+     width: 60%;
+     font-size: 1.1rem;
+     color: #2E465A;
+}
+
+#leftHero span {
+     font-size: 1.1rem;
+     color: #2E465A;
+     text-transform: uppercase;
+}
+
+/* Style the search field */
+form.heroInput input[type=text] {
+     padding: 10px;
+     font-size: 17px;
+     border: none;
+     float: left;
+     width: 40%;
+     background: #E2EAF0;
+}
+
+/* Style the submit button */
+form.heroInput button {
+     float: left;
+     width: 120px;
+     padding: 10px;
+     background: #2C4458;
+     color: white;
+     font-size: 17px;
+     border: none;
+     cursor: pointer;
+}
+   
+form.heroInput button:hover {
+     background: #4e799c;
+}
+   
+   /* Clear floats */
+   form.heroInput::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+body > section {
+     clear: both;
+}
+
+#features > section {
+     float: left;
+     width: 25%;
+}
+
+#features > section > * {
+     color: #2C4458;
+     width: 80%;
+}
+
+#features > section  a {
+     text-decoration: none;
+     font-weight: 700;
+}
+
+#features > section  a:hover {
+     text-decoration: underline;
+}
+
+#features i {
+     padding-left: 5px;
+}
+
+#problem {
+     background: #FFF;
+     clear: both;
+     height: 75vh;
+     padding: 5% 0 5% 5%;
+}
+
+#problem img{
+     width: 85%;    
+}
+   
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 1024px) {
+     nav h2 {
+          width: 20%;
+     }
+
+     nav ul li {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+     }
+
+}
+   
+@media only screen and (max-width: 768px) {
+     nav {
+          display: none;
+     }
+
+     header {
+          border-bottom: 1px #c0bfbf solid;
+     }
+
+     header > span {
+          display: block;
+          text-align: left;
+          margin: 3% 0 0 3%;
+          cursor: pointer;
+          color:#2C4458;
+     }
+
+     header > span:hover {
+          color:#4e799c;
+     }
+
+     #leftHero, #heroImg {
+          width: 100%;
+     }
+
+     #features > section {
+          width: 50%;
+          margin: 10px 0;
+     }
+
+     h2 {
+          font-size: 2.1rem;
+     }
+
+     #problem img{
+          width: 95%;    
+     }
+
+     #problem p {
+          width: 85%;
+     }
+
+     main {
+          height: 100vh;
+          padding-bottom: 5%;
+     }
+     #features {
+          height: 60vh;
+          padding-top: 150px
+     }
+}
+   
+@media only screen and (max-width: 460px) {
+     h1 {
+          font-size: 2.4rem;
+          width: 80%;
+     }
+     
+     h2 {
+          font-size: 2.1rem;
+     }
+     
+     h3 {
+          font-size: 1.1rem;
+     }
+
+     /* Style the search field */
+     form.heroInput input[type=text], form.heroInput button {
+          width: 90%;
+          margin: 5px 0;
+     }
+
+     #leftHero p {
+          width: 95%;
+     }
+
+     #features > section {
+          width: 100%;
+          margin: 10px 0;
+     }
+
+     main {
+          height: 70vh;
+     }
+
+     #features {
+          height: 150vh;
+          padding-top: 50px;
+     }
+
+     #heroImg {
+          height: 150px;
+     }
+}

@@ -1,0 +1,127 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  width: 10%;
+}
+
+nav * {
+  display: block;
+  padding: 5px 0;
+  color: rgb(80, 79, 79);
+}
+
+nav span {
+  color: orange;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+}
+
+main {
+  display: block;
+  float: left;
+  width: 90%;
+}
+
+main section {
+  float: left;
+  width: 50%;
+}
+
+main section > ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+main section > ul li {
+  margin: 50px 0;
+}
+
+main section > ul li * {
+  display: block;
+}
+
+main section > ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main section img {
+  width: 100%;
+}
+
+body > section * {
+  display: block;
+}
+
+body > section {
+  clear: both;
+  margin-left: 260px;
+}
+
+body > section h2 {
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+body > section p {
+  color: gray;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body > section span {
+  color: rgb(54, 52, 52);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+body > section h3 {
+  font-size: 35px;
+  width: 80%;
+  font-weight: 700;
+}
+
+body > section > section {
+  float: left;
+  display: block;
+  width: 33%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
