@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: gainsboro;
+}
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    border: 1px solid gray;
+    clear: both;
+}
+
+section {
+    height: 600px;
+    border: 1px solid gray;
+    float: left;
+}
+
+.box {
+    width: 20%;
+}
+
+.container {
+    width: 40%;
+}

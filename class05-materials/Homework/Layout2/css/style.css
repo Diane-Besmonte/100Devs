@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: gainsboro;
+}
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    border: 1px solid gray;
+    clear: both;
+}
+
+#container {
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.box {
+    border: 1px solid gray;
+    height: 300px;
+    float: left;
+}
+
+.zebra {
+    width: 40%;
+}
+
+.unicorn {  
+    width: 60%;
+}
