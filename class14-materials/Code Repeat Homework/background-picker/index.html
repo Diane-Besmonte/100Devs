@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This app helps youtubers pick the best background color for their videos">
+    	<meta name="keywords" content="youtube, background, lights">
+
+		<title>Virtual Tour</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Virtual Tour</h1>
+		  
+		  <div class="container">
+			<h2>Choose a Location</h2>
+			<div class="btns">
+				<button class="btn btn-ph">Philippines</button>
+				<button class="btn btn-jpn">Japan</button>
+				<button class="btn btn-us">United States</button>
+				<button class="btn btn-sk">South Korea</button>
+			</div>
+
+		  </div>
+
+		  <video autoplay muted loop id="travel" class="bg-video">
+			<source src="./img/travel-bg-video.mp4" type="video/mp4">
+		  </video>
+
+		  <video autoplay muted loop id="philippines" class="bg-video hide">
+			<source src="./img/philippines.mp4" type="video/mp4">
+		  </video>
+
+		  <video autoplay muted loop id="japan" class="bg-video hide">
+			<source src="./img/japan.mp4" type="video/mp4">
+		  </video>
+
+		  <video autoplay muted loop id="united-states" class="bg-video hide">
+			<source src="./img/california.mp4" type="video/mp4">
+		  </video>
+
+		  <video autoplay muted loop id="south-korea" class="bg-video hide">
+			<source src="./img/seoul.mp4" type="video/mp4">
+		  </video>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
